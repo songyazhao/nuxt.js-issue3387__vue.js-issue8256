@@ -1,4 +1,4 @@
-# vue-server-renderer-bug-mini-repo
+# nuxt.js-issue3387__vue.js-issue8256
 
 Tips: My English is very poor, forgive me, The following part of the English description translation.
 
