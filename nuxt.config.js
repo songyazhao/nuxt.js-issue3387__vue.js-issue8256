@@ -22,10 +22,12 @@ module.exports = {
    */
   build: {
     filenames: {
-      manifest: 'manifest.js?v=[hash]',
-      vendor: 'vendor.js?v=[hash]',
-      app: 'app.js?v=[chunkhash]',
-      chunk: '[name].js?v=[chunkhash]'
+      // app: ({ isDev }) => isDev ? '[name].js' : 'js/[name].js?v=[chunkhash:7]',
+      chunk: ({ isDev }) => isDev ? '[name].js' : 'js/[name].js?v=[chunkhash:7]',
+      // css: ({ isDev }) => isDev ? '[name].js' : 'css/[name].css?v=[contenthash:7]',
+      // img: ({ isDev }) => isDev ? '[path][name].[ext]' : 'images/[name].[ext]?v=[hash:7]',
+      // font: ({ isDev }) => isDev ? '[path][name].[ext]' : 'fonts/[name].[ext]?v=[hash:7]',
+      // video: ({ isDev }) => isDev ? '[path][name].[ext]' : 'videos/[name].[ext]?v=[hash:7]'
     }
   }
 }
