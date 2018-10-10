@@ -24,7 +24,7 @@ $ yarn install # Or npm install
     ...
     build: {
       filenames: {
-        chunk: '[name].js?v=[chunkhash]'
+        chunk: ({ isDev }) => isDev ? '[name].js' : 'js/[name].js?v=[chunkhash:7]'
       }
     }
   }
@@ -121,7 +121,7 @@ $ yarn install # Or npm install
 
   *最终定位到问题：*
 
-  > vue-server-renderer/server-plugin.js:78
+  > nuxt/dist/nuxt.js
 
   ```javascript
   if (asset.name.match(/\.js$/)) {
