@@ -2,11 +2,6 @@
 
 Tips: My English is very poor, forgive me, The following part of the English description translation.
 
-> A minimal reproduction, bug in 'vue-server-renderer'
-
-> 一个关于'vue-server-renderer'的最小化问题重现仓库
-
-
 ## Reproduction Step
 ## 复现步骤
 
